@@ -1,0 +1,11 @@
+<section class="home-cont">
+    <div class="heading">Last Saved Data</div>
+    <div class="body">
+        <ng-container ng-if="home.lastSavedData">
+            <div>Input 1: <b>{{home.lastSavedData.input1}}</b></div>
+            <div>Input 2: <b>{{home.lastSavedData.input2}}</b></div>
+            <div>Result: <b>{{home.lastSavedData.result}}</b></div>
+        </ng-container>
+        <div ng-if="!home.lastSavedData">Data doesn't exist. Please click <a ui-sref="addInput" href="javascript:void(0)">add</a> to create new data </div>
+    </div>
+</section>

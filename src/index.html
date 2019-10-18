@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Title -->
+    <title>Angular Test App</title>
+    <!--Library scripts-->
+    <script type="application/javascript" src="angular/angular.min.js"></script>
+    <script type="application/javascript" src="@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script type="application/javascript" src="angular-resource/angular-resource.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="javascript:void(0)" ui-sref="home">Home</a>
+        <a href="javascript:void(0)" ui-sref="addInput">Calculate inputs</a>
+    </header>
+    <!--Root view-->
+    <ui-view></ui-view>
+    <!-- Application scripts -->
+    <script type="application/javascript" src="app.js"></script>
+    <script type="application/javascript" src="controllers.js"></script>
+    <script type="application/javascript" src="directives.js"></script>
+    <script type="application/javascript" src="services.js"></script>
+</body>
+
+</html>
